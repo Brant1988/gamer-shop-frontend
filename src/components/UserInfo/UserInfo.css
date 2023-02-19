@@ -1,0 +1,26 @@
+.user_info {
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_info h3 {
+  color: rgba(255, 255, 255, 0.795);
+  margin-bottom: 5px;
+}
+
+.user_info button {
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}

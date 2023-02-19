@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  width: auto;
+  height: 50px;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.page_container {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected_page {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.not_selected_page {
+  font-weight: 700;
+  font-size: 20px;
+  color: gray;
+}
+
+.page_container svg {
+  color: gray;
+  font-size: 15px;
+}
+
+.page_container:hover span {
+  color: #fff;
+}
+
+.page_container:hover svg {
+  color: #fff;
+}

@@ -1,0 +1,135 @@
+.product_card {
+  width: 305px;
+  height: 400px;
+  margin-left: 15px;
+  background-color: rgb(32, 32, 32);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product_card img {
+  width: 305px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.product_card_info {
+  width: 280px;
+  height: 160px;
+  margin: auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.product_card_info h4 {
+  font-size: 0.9em;
+}
+
+.product_card_info p {
+  font-size: 0.7em;
+  color: gray;
+  margin-top: 5px;
+}
+
+.product_card_footer {
+  width: 280px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product_card_footer button {
+  width: 25%;
+  height: 80%;
+  background-color: rgb(53, 197, 197);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.product_card_price {
+  width: 75%;
+  display: flex;
+}
+
+.old_price {
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+
+.amount_control {
+  width: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount_control svg {
+  cursor: pointer;
+  font-size: 0.8em;
+  color: rgb(53, 197, 197);
+}
+
+.amount_control span {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 943px) {
+  .product_card {
+    width: 280px;
+  }
+
+  .product_card img {
+    width: 280px;
+  }
+
+  .product_card_info {
+    width: 260px;
+  }
+
+  .product_card_footer {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .product_card {
+    width: 260px;
+  }
+
+  .product_card img {
+    width: 260px;
+  }
+
+  .product_card_info {
+    width: 240px;
+  }
+
+  .product_card_footer {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .product_card {
+    width: 70%;
+    height: fit-content;
+  }
+
+  .product_card img {
+    width: 100%;
+    height: 60%;
+  }
+
+  .product_card_info {
+    width: 90%;
+  }
+
+  .product_card_footer {
+    width: 90%;
+    padding-bottom: 5px;
+  }
+}

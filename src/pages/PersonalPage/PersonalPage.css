@@ -1,0 +1,20 @@
+.personal_page {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.personal_info_container {
+  width: 35%;
+  min-width: 270px;
+}
+
+@media screen and (max-width: 819px) {
+  .personal_page {
+    align-items: center;
+  }
+}

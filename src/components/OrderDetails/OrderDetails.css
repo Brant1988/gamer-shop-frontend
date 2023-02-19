@@ -1,0 +1,26 @@
+.details_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.hide_button {
+  background: none;
+  border: none;
+  color: rgba(53, 197, 197, 0.734);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.details_footer h4 {
+  color: gray;
+}
+
+.details_footer span {
+  color: rgba(255, 255, 255, 0.795);
+}

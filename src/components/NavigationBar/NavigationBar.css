@@ -1,0 +1,29 @@
+.mobile_nav {
+  width: 390px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 107px;
+  left: 0;
+  flex-direction: column;
+  z-index: 9999;
+  background-color: black;
+}
+
+.mobile_nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_nav ul li {
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+.selected {
+  color: rgb(53, 197, 197);
+}
+
+.not_selected {
+  color: rgb(137, 135, 135);
+}

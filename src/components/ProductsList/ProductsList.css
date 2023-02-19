@@ -1,0 +1,38 @@
+.products_list {
+  width: 100%;
+  margin-top: 20px;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.not_found {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: 100%;
+}
+
+.not_found h3 {
+  margin-right: 5px;
+}
+
+.reset_filter {
+  color: rgb(53, 197, 197);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+  .products_list {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .products_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

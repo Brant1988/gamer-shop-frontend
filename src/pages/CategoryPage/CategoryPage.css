@@ -1,0 +1,13 @@
+.category_page {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.products_container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
