@@ -15,7 +15,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
   isMobile,
   handleCloseNav,
 }) => {
-  const { setBrands, setInfos, selectCategory } = shopSlice.actions;
+  const { setBrands, setInfos, selectCategory, setPage, clearFilters } =
+    shopSlice.actions;
   const { selectedCategory, categories } = useAppSelector(
     (state) => state.shop
   );
@@ -28,6 +29,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
     dispatch(setBrands(category.brands));
     dispatch(setInfos(category.prodInfoTitles));
     dispatch(fetchProducts({ categoryId: category.id }));
+    dispatch(clearFilters());
+    dispatch(setPage(1));
     navigate("/category/" + category.name.toLowerCase());
   };
 

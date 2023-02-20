@@ -13,7 +13,8 @@ const CategoryPage: React.FC = () => {
   const { selectedCategory, categories } = useAppSelector(
     (state) => state.shop
   );
-  const { selectCategory, setBrands, setInfos } = shopSlice.actions;
+  const { selectCategory, setBrands, setInfos, clearFilters, setPage } =
+    shopSlice.actions;
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const categoryName = useParams();
@@ -31,12 +32,16 @@ const CategoryPage: React.FC = () => {
       dispatch(selectCategory(categoryTofind.id));
       dispatch(setBrands(categoryTofind.brands));
       dispatch(setInfos(categoryTofind.prodInfoTitles));
+      dispatch(clearFilters());
+      dispatch(setPage(1));
     }
   }, [
     categoryName,
     selectedCategory,
     navigate,
     dispatch,
+    setPage,
+    clearFilters,
     categories,
     setBrands,
     setInfos,
